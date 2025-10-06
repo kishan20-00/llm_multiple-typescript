@@ -58,6 +58,18 @@ Methods:
 - <code title="get /files/{file_id}/content">client.files.<a href="./src/resources/files.ts">downloadContent</a>(fileID) -> unknown</code>
 - <code title="post /files">client.files.<a href="./src/resources/files.ts">upload</a>({ ...params }) -> unknown</code>
 
+# Health
+
+Types:
+
+- <code><a href="./src/resources/health.ts">HealthRetrieveResponse</a></code>
+- <code><a href="./src/resources/health.ts">HealthCheckResponse</a></code>
+
+Methods:
+
+- <code title="get /">client.health.<a href="./src/resources/health.ts">retrieve</a>() -> unknown</code>
+- <code title="get /health">client.health.<a href="./src/resources/health.ts">check</a>() -> unknown</code>
+
 # Batches
 
 Types:
