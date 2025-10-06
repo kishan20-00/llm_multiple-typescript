@@ -1,13 +1,3 @@
-# LlmMultiple
-
-Types:
-
-- <code><a href="./src/resources/top-level.ts">GetStatusResponse</a></code>
-
-Methods:
-
-- <code title="get /">client.<a href="./src/index.ts">getStatus</a>() -> unknown</code>
-
 # Chat
 
 Types:
@@ -83,13 +73,3 @@ Methods:
 - <code title="get /batches/{batch_id}">client.batches.<a href="./src/resources/batches.ts">retrieve</a>(batchID) -> unknown</code>
 - <code title="get /batches">client.batches.<a href="./src/resources/batches.ts">list</a>({ ...params }) -> unknown</code>
 - <code title="post /batches/{batch_id}/cancel">client.batches.<a href="./src/resources/batches.ts">cancel</a>(batchID) -> BatchCancelResponse</code>
-
-# Health
-
-Types:
-
-- <code><a href="./src/resources/health.ts">HealthCheckResponse</a></code>
-
-Methods:
-
-- <code title="get /health">client.health.<a href="./src/resources/health.ts">check</a>() -> unknown</code>
