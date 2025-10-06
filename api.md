@@ -18,8 +18,6 @@ Methods:
 
 - <code title="post /audio/transcriptions">client.audio.<a href="./src/resources/audio.ts">transcribe</a>({ ...params }) -> unknown</code>
 
-# Check
-
 # Images
 
 Types:
@@ -59,8 +57,6 @@ Methods:
 - <code title="delete /files/{file_id}">client.files.<a href="./src/resources/files.ts">delete</a>(fileID) -> unknown</code>
 - <code title="get /files/{file_id}/content">client.files.<a href="./src/resources/files.ts">downloadContent</a>(fileID) -> unknown</code>
 - <code title="post /files">client.files.<a href="./src/resources/files.ts">upload</a>({ ...params }) -> unknown</code>
-
-# Health
 
 # Batches
 
