@@ -37,6 +37,7 @@ import {
   FileUploadResponse,
   Files,
 } from './resources/files';
+import { Health, HealthCheckResponse, HealthRetrieveResponse } from './resources/health';
 import { ImageGenerateParams, ImageGenerateResponse, Images } from './resources/images';
 import { ModelListResponse, ModelRetrieveResponse, Models } from './resources/models';
 import { type Fetch } from './internal/builtin-types';
@@ -747,6 +748,7 @@ export class LlmMultiple {
   images: API.Images = new API.Images(this);
   models: API.Models = new API.Models(this);
   files: API.Files = new API.Files(this);
+  health: API.Health = new API.Health(this);
   batches: API.Batches = new API.Batches(this);
 }
 
@@ -755,6 +757,7 @@ LlmMultiple.Audio = Audio;
 LlmMultiple.Images = Images;
 LlmMultiple.Models = Models;
 LlmMultiple.Files = Files;
+LlmMultiple.Health = Health;
 LlmMultiple.Batches = Batches;
 
 export declare namespace LlmMultiple {
@@ -793,6 +796,12 @@ export declare namespace LlmMultiple {
     type FileUploadResponse as FileUploadResponse,
     type FileListParams as FileListParams,
     type FileUploadParams as FileUploadParams,
+  };
+
+  export {
+    Health as Health,
+    type HealthRetrieveResponse as HealthRetrieveResponse,
+    type HealthCheckResponse as HealthCheckResponse,
   };
 
   export {

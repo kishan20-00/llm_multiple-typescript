@@ -21,5 +21,6 @@ export {
   type FileListParams,
   type FileUploadParams,
 } from './files';
+export { Health, type HealthRetrieveResponse, type HealthCheckResponse } from './health';
 export { Images, type ImageGenerateResponse, type ImageGenerateParams } from './images';
 export { Models, type ModelRetrieveResponse, type ModelListResponse } from './models';
