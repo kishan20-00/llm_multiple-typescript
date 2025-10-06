@@ -11,6 +11,7 @@ export {
   type BatchListParams,
 } from './batches';
 export { Chat, type ChatCreateCompletionResponse, type ChatCreateCompletionParams } from './chat';
+export { Check } from './check';
 export {
   Files,
   type FileRetrieveResponse,
@@ -21,6 +22,6 @@ export {
   type FileListParams,
   type FileUploadParams,
 } from './files';
-export { Health, type HealthRetrieveResponse, type HealthCheckResponse } from './health';
+export { Health } from './health';
 export { Images, type ImageGenerateResponse, type ImageGenerateParams } from './images';
 export { Models, type ModelRetrieveResponse, type ModelListResponse } from './models';

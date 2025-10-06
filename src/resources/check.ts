@@ -2,4 +2,4 @@
 
 import { APIResource } from '../core/resource';
 
-export class Health extends APIResource {}
+export class Check extends APIResource {}
