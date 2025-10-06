@@ -37,10 +37,8 @@ import {
   FileUploadResponse,
   Files,
 } from './resources/files';
-import { Health, HealthCheckResponse } from './resources/health';
 import { ImageGenerateParams, ImageGenerateResponse, Images } from './resources/images';
 import { ModelListResponse, ModelRetrieveResponse, Models } from './resources/models';
-import { GetStatusResponse } from './resources/top-level';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -214,17 +212,6 @@ export class LlmMultiple {
    */
   #baseURLOverridden(): boolean {
     return this.baseURL !== 'https://api.example.com';
-  }
-
-  /**
-   * Root endpoint providing a simple status message.
-   *
-   * Args: None
-   *
-   * Returns: dict: A message indicating the application status and environment.
-   */
-  getStatus(options?: RequestOptions): APIPromise<unknown> {
-    return this.get('/', options);
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
@@ -761,7 +748,6 @@ export class LlmMultiple {
   models: API.Models = new API.Models(this);
   files: API.Files = new API.Files(this);
   batches: API.Batches = new API.Batches(this);
-  health: API.Health = new API.Health(this);
 }
 
 LlmMultiple.Chat = Chat;
@@ -770,12 +756,9 @@ LlmMultiple.Images = Images;
 LlmMultiple.Models = Models;
 LlmMultiple.Files = Files;
 LlmMultiple.Batches = Batches;
-LlmMultiple.Health = Health;
 
 export declare namespace LlmMultiple {
   export type RequestOptions = Opts.RequestOptions;
-
-  export { type GetStatusResponse as GetStatusResponse };
 
   export {
     Chat as Chat,
@@ -821,6 +804,4 @@ export declare namespace LlmMultiple {
     type BatchCreateParams as BatchCreateParams,
     type BatchListParams as BatchListParams,
   };
-
-  export { Health as Health, type HealthCheckResponse as HealthCheckResponse };
 }
