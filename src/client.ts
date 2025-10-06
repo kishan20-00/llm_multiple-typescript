@@ -27,6 +27,7 @@ import {
   Batches,
 } from './resources/batches';
 import { Chat, ChatCreateCompletionParams, ChatCreateCompletionResponse } from './resources/chat';
+import { Check } from './resources/check';
 import {
   FileDeleteResponse,
   FileDownloadContentResponse,
@@ -37,7 +38,7 @@ import {
   FileUploadResponse,
   Files,
 } from './resources/files';
-import { Health, HealthCheckResponse, HealthRetrieveResponse } from './resources/health';
+import { Health } from './resources/health';
 import { ImageGenerateParams, ImageGenerateResponse, Images } from './resources/images';
 import { ModelListResponse, ModelRetrieveResponse, Models } from './resources/models';
 import { type Fetch } from './internal/builtin-types';
@@ -745,6 +746,7 @@ export class LlmMultiple {
 
   chat: API.Chat = new API.Chat(this);
   audio: API.Audio = new API.Audio(this);
+  check: API.Check = new API.Check(this);
   images: API.Images = new API.Images(this);
   models: API.Models = new API.Models(this);
   files: API.Files = new API.Files(this);
@@ -754,6 +756,7 @@ export class LlmMultiple {
 
 LlmMultiple.Chat = Chat;
 LlmMultiple.Audio = Audio;
+LlmMultiple.Check = Check;
 LlmMultiple.Images = Images;
 LlmMultiple.Models = Models;
 LlmMultiple.Files = Files;
@@ -774,6 +777,8 @@ export declare namespace LlmMultiple {
     type AudioTranscribeResponse as AudioTranscribeResponse,
     type AudioTranscribeParams as AudioTranscribeParams,
   };
+
+  export { Check as Check };
 
   export {
     Images as Images,
@@ -798,11 +803,7 @@ export declare namespace LlmMultiple {
     type FileUploadParams as FileUploadParams,
   };
 
-  export {
-    Health as Health,
-    type HealthRetrieveResponse as HealthRetrieveResponse,
-    type HealthCheckResponse as HealthCheckResponse,
-  };
+  export { Health as Health };
 
   export {
     Batches as Batches,

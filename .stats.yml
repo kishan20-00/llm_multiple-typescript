@@ -1,4 +1,4 @@
-configured_endpoints: 16
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/quantumloom%2Fllm_multiple-5be1e218799513136acc7f925ee2b759b92de11a0a6d48b2305cd02edebe710b.yml
-openapi_spec_hash: 622480699891c407aaee7662811f055f
-config_hash: 612d1c17649280d4f4efc3929d42f9d6
+configured_endpoints: 14
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/quantumloom%2Fllm_multiple-7023f65eeb4f77c6b1142013211fa87950dbce0c9f1ea7a40e4297eb6b6cda75.yml
+openapi_spec_hash: e646b3ea6779fcabacb612a4c08e1c10
+config_hash: 7a674a4497ee9173eddbf22dc4d6a4fa

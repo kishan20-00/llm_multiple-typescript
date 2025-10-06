@@ -18,6 +18,8 @@ Methods:
 
 - <code title="post /audio/transcriptions">client.audio.<a href="./src/resources/audio.ts">transcribe</a>({ ...params }) -> unknown</code>
 
+# Check
+
 # Images
 
 Types:
@@ -59,16 +61,6 @@ Methods:
 - <code title="post /files">client.files.<a href="./src/resources/files.ts">upload</a>({ ...params }) -> unknown</code>
 
 # Health
-
-Types:
-
-- <code><a href="./src/resources/health.ts">HealthRetrieveResponse</a></code>
-- <code><a href="./src/resources/health.ts">HealthCheckResponse</a></code>
-
-Methods:
-
-- <code title="get /">client.health.<a href="./src/resources/health.ts">retrieve</a>() -> unknown</code>
-- <code title="get /health">client.health.<a href="./src/resources/health.ts">check</a>() -> unknown</code>
 
 # Batches
 
